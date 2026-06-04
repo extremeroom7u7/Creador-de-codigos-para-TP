@@ -106,7 +106,7 @@
     // We use padStart to keep the string length consistent
     const randomVal = Math.floor(Math.random() * 10000000000000000000).toString().padStart(20, '0');
 
-    const finalid = Math.floor(Math.random() * 9).toString().padStart(1, '0'); + randomVal
+    const finalid = Math.floor(Math.random() * 9).toString().padStart(1, '0') + randomVal;
 
     // Update the UI
     document.getElementById("timeText").innerText = finalid;
