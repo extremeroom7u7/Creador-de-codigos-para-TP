@@ -107,7 +107,7 @@
     const randomVal = Math.floor(Math.random() * 10000000000000000000).toString().padStart(20, '0');
 
     // Update the UI
-    document.getElementById("timeText").innerText = finalID;
+    document.getElementById("timeText").innerText = randomVal;
 
     // Generate the Barcode URL using the combined ID
     const baseParams = `code=Aztec&modulewidth=10&imagetype=Png&data=${randomVal}&cache=${Math.random()}`;
